@@ -81,6 +81,7 @@ def run_backtest(args: argparse.Namespace) -> None:
         end_dt,
         benchmark_asset="SPY",
         parameters=build_parameters(args),
+        save_logfile=True
     )
     print(results)
 
